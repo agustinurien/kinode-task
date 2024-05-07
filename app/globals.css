@@ -3,10 +3,11 @@
 }
 body{
   margin: 0px;
+  background: linear-gradient(87deg, rgba(34,33,31,1) 5%, rgba(34,33,31,1) 10%, rgba(63,40,31,1) 26%, rgba(243,84,34,1) 38%, rgba(247,129,78,1) 57%, rgba(230,13,22,1) 69%, rgba(34,33,31,1) 92%);
 }
-
 .navBarBack {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.082);
   backdrop-filter: blur(9px);
@@ -18,6 +19,7 @@ body{
   z-index: 999;
   overflow: hidden;
 }
+
 /* Pseudo-elemento para el efecto de brillo */
 .navBarBack::before {
   content: '';
@@ -39,8 +41,15 @@ body{
   }
 }
 .navBarBack a{
+  text-align: center;
+  width: 7%;
   text-decoration: none;
   color: #fff5d9d8;
+  
+}
+.navBarBack a:hover{
+  text-shadow: 0px 0px 15px rgb(255, 255, 255);
+  
 }
 .logo{
   padding-top: 10px;
@@ -129,7 +138,7 @@ body{
   align-items: flex-end;
   gap: 50px;
 }
-.contentContainer div{
+.contentContainer div {
   position: relative;
   width: 80%;
   height: 170px;
@@ -143,9 +152,11 @@ body{
   border-left: 1px solid #fff5d956;
   border-bottom: 1px solid #fff5d9a9;
   border-right: 1px solid #fff5d94d;
-  color:#FFF5D9;
+  color: #FFF5D9;
   overflow: hidden;
+  
 }
+
 
 .contentContainer div h3{
   margin: 0;
@@ -437,10 +448,9 @@ body{
 .containerRadius{
   position: relative;
   height: 100%;
-  width: 60%;
+  width: fit-content;
   display: flex;
   justify-content: center;
-  
 }
 .radius{
   height: 100%;
@@ -450,11 +460,12 @@ body{
 .contenedorLogoFooter{
   position: absolute;
   bottom: 0;
-  width: 100%;
-  height: 100%;
+  width: fit-content;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  
 }
 .logoFooter{
   width: 100px;
@@ -463,14 +474,21 @@ body{
   
 }
 
-.comunity{
+.comunityContainer{
   color: #FDF0D5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.comunity span{
+.comunityText{
+  padding-left: 7%;
+}
+
+.comunityText span{
   font-size: 0.9rem;
   color: #fdf0d56b;
 }
-.comunity h2{
+.comunityText h2{
   margin: 0px;
   padding: 5px 0px;
   width: 100%;
@@ -480,13 +498,19 @@ body{
 .socials{
   display: flex;
   justify-content: center;
-  gap: 10%;
-  padding-right: 70px;
+  gap: 5%;
+  width: 100%;
+  z-index: 999;
 }
 .socials a{
   text-decoration: none;
   color: #FDF0D5;
   font-size: 40px;
+  
+}
+.socials a:hover{
+  scale: 1.1;
+  
 }
 
 .rights{

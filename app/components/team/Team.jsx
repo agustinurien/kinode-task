@@ -5,7 +5,7 @@ import Carrousel from "./Carrousel"
 
 const Team = () => {
     return (
-        <section>
+        <section >
             <div className="teamPreImage">
                 <Image
                     src={stairs}
@@ -14,7 +14,7 @@ const Team = () => {
                     className="stairs"
                 ></Image>
                 <div className="teamSubtitle_Container">
-                    <h2 className={`${open_Sans.className}`}>TEAM</h2>
+                    <h2 id="team" className={`${open_Sans.className}`}>TEAM</h2>
                 </div>
             </div>
             <div className="teamBackground">

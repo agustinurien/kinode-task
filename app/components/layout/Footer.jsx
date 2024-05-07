@@ -9,9 +9,12 @@ const Footer = () => {
         <section className={`${open_Sans.className} footer`}>
 
             <div className="footerContent">
-                <div className="comunity">
-                    <h2>Join the comunity</h2>
-                    <span>josh@kinode.org</span>
+                <div className="comunityContainer">
+                    <div className="comunityText">
+
+                        <h2>Join the comunity</h2>
+                        <span>josh@kinode.org</span>
+                    </div>
                 </div>
 
 
@@ -21,6 +24,7 @@ const Footer = () => {
                         width={200}
                         height={200}
                         className="radius"
+                        alt="radiusVector"
                     ></Image>
                     <div className="contenedorLogoFooter">
                         <Image
@@ -28,17 +32,18 @@ const Footer = () => {
                             width={1000}
                             height={1000}
                             className="logoFooter"
+                            alt="logoKinode"
                         ></Image>
                     </div>
                 </div>
 
 
                 <div className="socials">
-                    <a href=""><FaTwitter /></a>
-                    <a href=""><FaDiscord /></a>
-                    <a href=""><FaGithub /></a>
-                    <a href=""><FaTelegram /></a>
-                    <a href=""><FaYoutube /></a>
+                    <a href="https://twitter.com/KinodeOS"><FaTwitter /></a>
+                    <a href="https://discord.com/invite/mYDj74NkfP"><FaDiscord /></a>
+                    <a href="https://github.com/kinode-dao"><FaGithub /></a>
+                    <a href="https://t.me/uqbarnetwork"><FaTelegram /></a>
+                    <a href="https://www.youtube.com/@kinodeOS"><FaYoutube /></a>
                 </div>
             </div>
 

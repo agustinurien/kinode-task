@@ -3,7 +3,7 @@ import { barlow, open_Sans } from "@/app/fonts"
 
 const AboutUs = () => {
     return (
-        <section className="aboutUsBackground">
+        <section id="aboutUs" className="aboutUsBackground">
             <section className={`${open_Sans.className} aboutUsContainer`}>
                 <div className="subTitleContainer">
                     <h2 >ABOUT US</h2>

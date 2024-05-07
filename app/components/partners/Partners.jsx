@@ -31,6 +31,7 @@ const Partners = () => {
                     width={1500}
                     height={1500}
                     className="treeImage"
+                    alt="treeImage"
                 ></Image>
                 <div className="gradientTree">
                 </div>
@@ -48,15 +49,18 @@ const Partners = () => {
                     }}
                     animate={controls}
                     className="sponsorCard">
-                    <div >
-                        <Image
-                            src={hill}
-                            width={100}
-                            height={100}
-                            alt="ChampionHillImage"
-                            className="logoSponsor"
-                        ></Image>
-                    </div>
+                    <a href="https://www.championhillventures.com/">
+
+                        <div >
+                            <Image
+                                src={hill}
+                                width={100}
+                                height={100}
+                                alt="ChampionHillImage"
+                                className="logoSponsor"
+                            ></Image>
+                        </div>
+                    </a>
                     <h2>Champion Hill</h2>
                 </motion.div>
 
@@ -68,15 +72,18 @@ const Partners = () => {
                     initial="default"
                     animate={controls}
                     className="sponsorCard">
-                    <div >
-                        <Image
-                            src={assembly}
-                            width={100}
-                            height={100}
-                            alt="assemblyImage"
-                            className="logoSponsor"
-                        ></Image>
-                    </div>
+                    <a href="https://assembly.capital/">
+
+                        <div >
+                            <Image
+                                src={assembly}
+                                width={100}
+                                height={100}
+                                alt="assemblyImage"
+                                className="logoSponsor"
+                            ></Image>
+                        </div>
+                    </a>
                     <h2>Assembly</h2>
                 </motion.div>
 
@@ -87,15 +94,18 @@ const Partners = () => {
                     }}
                     animate={controls}
                     className="sponsorCard">
-                    <div >
-                        <Image
-                            src={delphi}
-                            width={100}
-                            height={100}
-                            alt="delphiImage"
-                            className="logoSponsor"
-                        ></Image>
-                    </div>
+                    <a href="https://delphiventures.io/">
+
+                        <div >
+                            <Image
+                                src={delphi}
+                                width={100}
+                                height={100}
+                                alt="delphiImage"
+                                className="logoSponsor"
+                            ></Image>
+                        </div>
+                    </a>
                     <h2>Delphi</h2>
                 </motion.div>
 
@@ -107,15 +117,18 @@ const Partners = () => {
                     initial="default"
                     animate={controls}
                     className="sponsorCard">
-                    <div >
-                        <Image
-                            src={cmcc}
-                            width={100}
-                            height={100}
-                            alt="cmccImage"
-                            className="logoSponsor"
-                        ></Image>
-                    </div>
+                    <a href="https://www.cmcc.vc/">
+
+                        <div >
+                            <Image
+                                src={cmcc}
+                                width={100}
+                                height={100}
+                                alt="cmccImage"
+                                className="logoSponsor"
+                            ></Image>
+                        </div>
+                    </a>
                     <h2>CMCC</h2>
                 </motion.div>
 
@@ -126,15 +139,18 @@ const Partners = () => {
                     }}
                     animate={controls}
                     className="sponsorCard">
-                    <div >
-                        <Image
-                            src={brain}
-                            width={100}
-                            height={100}
-                            alt="brainImage"
-                            className="logoSponsor"
-                        ></Image>
-                    </div>
+                    <a href="https://www.bigbrain.holdings/">
+
+                        <div >
+                            <Image
+                                src={brain}
+                                width={100}
+                                height={100}
+                                alt="brainImage"
+                                className="logoSponsor"
+                            ></Image>
+                        </div>
+                    </a>
                     <h2>Big Brain</h2>
                 </motion.div>
 

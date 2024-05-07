@@ -199,6 +199,7 @@ const Carrousel = () => {
                     width={40}
                     height={80}
                     className='arrow'
+                    alt='leftArrow'
 
                 ></Image>
             </button>
@@ -208,6 +209,7 @@ const Carrousel = () => {
                     width={40}
                     height={80}
                     className='arrow'
+                    alt='rightArrow'
                 ></Image>
             </button>
         </div >

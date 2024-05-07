@@ -11,7 +11,8 @@ export default function Home() {
       <div className="gradient" >
         <Starting />
         <AboutUs />
-        <div className="gradient_effect"></div>
+        <div className="gradient_effect">
+        </div>
       </div>
       <Team />
       <Partners />
