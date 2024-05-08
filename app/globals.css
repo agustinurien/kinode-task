@@ -3,7 +3,7 @@
 }
 body{
   margin: 0px;
-  background: linear-gradient(87deg, rgba(34,33,31,1) 5%, rgba(34,33,31,1) 10%, rgba(63,40,31,1) 26%, rgba(243,84,34,1) 38%, rgba(247,129,78,1) 57%, rgba(230,13,22,1) 69%, rgba(34,33,31,1) 92%);
+  background-color: #000000;
 }
 .navBarBack {
   position: fixed;
@@ -14,9 +14,9 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8%;
+  gap: 5%;
   height: 100px;
-  z-index: 999;
+  z-index: 1000;
   overflow: hidden;
 }
 
@@ -172,23 +172,32 @@ body{
 }
 
 .teamPreImage{
+  padding-top: 100px;
   position: relative;
+  background-color:  rgb(2, 2, 2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .stairs{
+  position: absolute;
+  top: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
 }
 
 .teamSubtitle_Container{
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 80vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 0px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgb(2, 2, 2) 80%);
+  z-index: 2;
 }
 .teamSubtitle_Container h2{
   margin: 0;
@@ -201,6 +210,7 @@ body{
 }
 
 .teamBackground{
+  position: relative;
   width: 100%;
   background-color: rgb(2, 2, 2);
   padding-bottom: 20px;
@@ -209,7 +219,24 @@ body{
   align-items: center;
   
 }
-
+.framerMotionEffect{
+  position: absolute;
+  background: linear-gradient(to right, rgb(2, 2, 2) 70%, rgba(2, 2, 2, 0) 100%);
+  top: 0;
+  height: 100%;
+  width: 60%;
+  left: 0;
+  z-index: 999;
+}
+.framerMotionEffect2{
+  position: absolute;
+  background: linear-gradient(to left,  rgb(2, 2, 2) 70%, rgba(2, 2, 2, 0) 100%);
+  top: 0;
+  height: 100%;
+  width: 60%;
+  right: 0;
+  z-index: 999;
+}
 .carrousel {
   width: 80%;
   overflow-x: hidden;
@@ -224,7 +251,6 @@ body{
   height: 100%;
   width: 38.6%;
   background: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgb(2, 2, 2) 100%);
-  backdrop-filter: blur(3px);
   z-index: 2;
 }
 .blurEffect2{
@@ -234,7 +260,6 @@ body{
   height: 100%;
   width: 39.2%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0) 20%, rgb(2, 2, 2) 100%);
-  backdrop-filter: blur(3px);
   z-index: 2;
 }
 .innerCarrousel {
@@ -246,13 +271,23 @@ body{
 }
 
 .member {
+  position: relative;
   flex-shrink: 0; /* Evita que los elementos se reduzcan para ajustarse al contenedor */
   width: 300px; 
   height: 300px;
 
 }
+.memberBlur{
+  position: absolute;
+  flex-shrink: 0;
+  width: 300px; 
+  height: 320px;
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
 .memberSelected{
   scale: 1.1;
+  z-index: 4;
 }
 
 .memberDataContainer{
@@ -306,7 +341,7 @@ body{
 }
 
 .descriptionMember{
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: center;
   pointer-events: none;
@@ -315,28 +350,29 @@ body{
   pointer-events: none;
   padding-bottom: 15px;
   text-align: center;
+  font-size: 0.9rem;
 }
 
 .bottomRight{
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: 999;
   background-color: transparent;
   border: 0px;
   margin-right: 30%;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 .bottomLeft{
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 999;
   background-color: transparent;
   border: 0px;
   transform: scaleX(-1);
   margin-left: 30%;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 .arrow{
   position: absolute;
@@ -390,7 +426,7 @@ body{
 }
 
 .sponsorContainer{
-  margin-top: 400px;
+  margin-top: 300px;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -523,3 +559,443 @@ body{
   color: #fff5d91c;
   padding: 10px;
 }
+
+@media screen and (max-width: 1500px) {
+  .navBarBack {
+    height: 80px;
+    gap: 7%;
+    
+  }
+  .navBarBack a{
+    font-size: 0.75rem;
+    width: 60px;
+  }
+  .containerStart {
+    height: 58vh;
+    
+  }
+
+  .contentContainer div {
+    width: 85%;
+    height: fit-content;
+    padding: 20px 25px;
+  }
+
+  .contentContainer div h3{
+    font-size: 15px;
+  }
+  .contentContainer div p{
+    width: 100%;
+  }
+  .marginDiv{
+    margin-right: 7%;
+  }
+  .subTitleContainer h2 {
+    
+    font-size: 9rem;
+    
+  }
+  .teamSubtitle_Container{
+    height: 20vh;
+    display: flex;
+    
+  }
+  .teamSubtitle_Container h2{
+    font-size: 8rem;
+    -webkit-text-stroke: 0.1px #FFF5D9;
+  }
+  .blurEffect1{
+    width: 35%;
+  }
+  .blurEffect2{
+    width: 35%;
+  }
+  .bottomRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    background-color: transparent;
+    border: 0px;
+    margin-right: 20%;
+    margin-top: 20%;
+  }
+  .bottomLeft{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: transparent;
+    border: 0px;
+    transform: scaleX(-1);
+    margin-left: 20%;
+    margin-top: 20%;
+    
+  }
+  .sponsorContainer{
+    margin-top: 100px;
+    gap: 2%;
+    width: 100%;
+    
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .navBarBack {
+    height: 70px;
+    gap: 2%;
+    
+  }
+  .navBarBack a{
+    text-align: center;
+    width: fit-content;
+    text-decoration: none;
+    color: #fff5d9d8;
+    font-size: 0.65rem;
+    width: 60px;
+  }
+  .logo{
+    width: 40px;
+  }
+  
+  .containerStart {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    width: 70%;
+    height: fit-content;
+    
+  }
+  .kinodeTextLogo{
+    width: 100%;
+    height: auto;
+  }
+  .subHeadline{
+    color: #fff5d9c4;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin: 20px 0px;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+
+  .aboutUsContainer{
+    padding: 40px 0px;
+    
+  }
+  .subTitleContainer{
+    display: none;
+  }
+  
+  .subTitleContainer h2 {
+    margin: 0;
+    font-size: 10rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #FFF5D9;
+    opacity: 0.1;
+    font-weight: 700;
+    letter-spacing: -4%;
+  }
+  
+  .contentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .contentContainer div {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 25px;
+    
+  }
+  
+  .contentContainer div h3{
+    font-size: 15px;
+  }
+  .contentContainer div p{
+    width: 100%;
+  }
+  .marginDiv{
+    margin-right: 0%;
+  }
+  .teamPreImage{
+    position: relative;
+    width: 100%;
+  }
+  
+  .teamSubtitle_Container{
+    height: 10vh;
+    display: flex;
+    
+  }
+  .teamSubtitle_Container h2{
+    font-size: 3rem;
+    -webkit-text-stroke: 0.1px #FFF5D9;
+  }
+  
+  .carrousel {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 70px;
+    padding-top: 0px;
+  }
+
+  .carrousel {
+    padding-top: 70px;
+    padding-bottom: 0px;
+  }
+  
+  .innerCarrousel {
+    display: flex;
+    justify-content: center;
+    padding-left: 310px;
+    gap: 20px;
+    padding-bottom: 20px; /* Espacio inferior para evitar que los botones se superpongan */
+    
+  }
+  .memberSelected{
+    scale: 1;
+  }
+  .shownData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .namePosition{
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  .memberProfileImage{
+    width: 90%;
+    height: 90%;
+    
+  }
+
+  .blurEffect1{
+    width: 32%;
+  }
+  .blurEffect2{
+    width: 32%;
+  }
+
+
+  .bottomRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    background-color: transparent;
+    border: 0px;
+    margin-right: 23%;
+    margin-top: 15%;
+  }
+  .bottomLeft{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: transparent;
+    border: 0px;
+    transform: scaleX(-1);
+    margin-left: 23%;
+    margin-top: 15%;
+    
+  }
+  .arrow{
+    width: 35px;
+    height: auto;
+  }
+  .gradientBetween{
+    height: 5px;
+  }
+  .gradientBetweenBottom{
+    position: absolute;
+    bottom: 0;
+    height: 130px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(218, 20, 20, 0), rgb(2, 2, 2));
+  }
+  
+  .treeImage{
+    width: 100%;
+  }
+  .gradientTree{
+    width: 100%;
+  }
+  
+  .sponsorContainer{
+    margin-top: 100px;
+    gap: 3%;
+    width: 100%;
+    
+  }
+  
+  .sponsorCard div{
+    width: 60px;
+    height: 60px; 
+  }
+  .sponsorCard h2{
+    margin: 5px 0px;
+    font-size: 0.7rem;
+  }
+  
+  .logoSponsor{
+    width: 100%;
+  }
+  
+
+  .footer{
+    position: relative;
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+  }
+  .footerContent{
+    height: 220px;
+  }
+  
+  .containerRadius{
+    position: absolute;
+    top: 0;
+    padding: 0px 7px;
+    align-items: flex-end;
+    
+  }
+  .radius{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .logoFooter{
+    width: 50px;
+    padding-bottom: 35px;
+    
+  }
+  
+  .comunityText span{
+    font-size: 0.7rem;
+    color: #fdf0d56b;
+  }
+  .comunityText h2{
+    padding: 0px 0px;
+    font-size: 1.3rem;
+    
+  }
+  .socials{
+    gap: 3%;
+  }
+  .socials a{
+    font-size: 26px;
+    
+  }
+  .rights{
+    position: relative;
+    font-size: 0.5rem;
+    height: 10px;
+    z-index: 999;
+  }
+}
+@media screen and (max-width: 739px) {
+  
+  .sponsorCard div{
+    width: 62px;
+    height: 62px; 
+  }
+  .bottomRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    background-color: transparent;
+    border: 0px;
+    margin-right: 13%;
+    margin-top: 20%;
+  }
+  .bottomLeft{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: transparent;
+    border: 0px;
+    transform: scaleX(-1);
+    margin-left: 12%;
+    margin-top: 20%;
+    
+  }
+}
+@media screen and (max-width: 460px) {
+  .arrow{
+    width: 20px;
+    height: auto;
+  }
+  .blurEffect1{
+    width: 8%;
+  }
+  .blurEffect2{
+    width: 8%;
+  }
+
+  .bottomRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    background-color: transparent;
+    border: 0px;
+    margin-right: 13%;
+    margin-top: 20%;
+  }
+  .bottomLeft{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: transparent;
+    border: 0px;
+    transform: scaleX(-1);
+    margin-left: 12%;
+    margin-top: 20%;
+    
+  }
+  .sponsorContainer{
+    margin-top: 40px;
+    gap: 2%;
+    width: 100%;
+    
+  }
+  .sponsorCard div{
+    width: 40px;
+    height: 40px; 
+  }
+
+  .sponsorCard h2{
+    margin: 5px 0px;
+    font-size: 0.5rem;
+  }
+  .comunityText span{
+    font-size: 0.5rem;
+    color: #fdf0d56b;
+  }
+  .comunityText h2{
+    padding: 0px 0px;
+    font-size: 0.8rem;
+    
+  }
+  .socials a{
+    font-size: 15px;
+    
+  }
+  .footerContent{
+    height: 200px;
+  }
+}
+

@@ -2,25 +2,34 @@
 
 import Image from "next/image"
 import treeImage from "../../../public/assets/garden2.png"
-import brain from "../../../public/assets/bbrain.png"
+import brain from "../../../public/assets/b.png"
 import assembly from "../../../public/assets/assembly.png"
 import hill from "../../../public/assets/champion.png"
 import cmcc from "../../../public/assets/cmcc.png"
 import delphi from "../../../public/assets/delphi.png"
-import { motion, useAnimation } from 'framer-motion'
-import { useEffect } from "react"
+import { motion, useAnimation, useInView } from 'framer-motion'
+import { useEffect, useRef } from "react"
 import { open_Sans } from "@/app/fonts"
 const Partners = () => {
+    const ref = useRef(null)
+    const isInView = useInView(ref, { once: true })
     const controls = useAnimation();
     useEffect(() => {
         const loopAnimation = () => {
 
             controls.start("animate").then(() => {
-                controls.start("default", { repeat: Infinity, repeatType: "reverse", ease: "easeInOut", duration: 1.5 })
+                controls.start("animate2", { repeat: Infinity, repeatType: "reverse", ease: "easeInOut", duration: 1.5 })
             });
         }
         loopAnimation()
+
     }, [])
+
+    useEffect(() => {
+        if (isInView) {
+            controls.start("start")
+        }
+    }, [isInView])
 
 
     return (
@@ -44,10 +53,14 @@ const Partners = () => {
 
                 <motion.div
                     variants={{
-                        default: { y: 0 },
+                        default: { opacity: 0 },
+                        start: { opacity: 1 },
+                        animate2: { y: 0 },
                         animate: { y: 10 }
                     }}
+                    initial="default"
                     animate={controls}
+                    transition={{ duration: 1 }}
                     className="sponsorCard">
                     <a href="https://www.championhillventures.com/">
 
@@ -65,12 +78,16 @@ const Partners = () => {
                 </motion.div>
 
                 <motion.div
+                    ref={ref}
                     variants={{
-                        default: { y: 100 },
+                        default: { opacity: 0, y: 100 },
+                        start: { opacity: 1 },
+                        animate2: { y: 100 },
                         animate: { y: 90 }
                     }}
                     initial="default"
                     animate={controls}
+                    transition={{ duration: 1, delay: 0.2 }}
                     className="sponsorCard">
                     <a href="https://assembly.capital/">
 
@@ -89,10 +106,14 @@ const Partners = () => {
 
                 <motion.div
                     variants={{
-                        default: { y: 0 },
+                        default: { opacity: 0 },
+                        start: { opacity: 1 },
+                        animate2: { y: 0 },
                         animate: { y: 10 }
                     }}
+                    initial="default"
                     animate={controls}
+                    transition={{ duration: 1, delay: 0.4 }}
                     className="sponsorCard">
                     <a href="https://delphiventures.io/">
 
@@ -111,11 +132,14 @@ const Partners = () => {
 
                 <motion.div
                     variants={{
-                        default: { y: 100 },
+                        default: { opacity: 0, y: 100 },
+                        start: { opacity: 1 },
+                        animate2: { y: 100 },
                         animate: { y: 90 }
                     }}
                     initial="default"
                     animate={controls}
+                    transition={{ duration: 1, delay: 0.6 }}
                     className="sponsorCard">
                     <a href="https://www.cmcc.vc/">
 
@@ -134,10 +158,14 @@ const Partners = () => {
 
                 <motion.div
                     variants={{
-                        default: { y: 0 },
+                        default: { opacity: 0 },
+                        start: { opacity: 1 },
+                        animate2: { y: 0 },
                         animate: { y: 10 }
                     }}
+                    initial="default"
                     animate={controls}
+                    transition={{ duration: 1, delay: 0.8 }}
                     className="sponsorCard">
                     <a href="https://www.bigbrain.holdings/">
 
