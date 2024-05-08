@@ -269,7 +269,7 @@ body{
 .innerCarrousel {
   display: flex;
   justify-content: center;
-  padding-left: 310px;
+  padding-left: 320px;
   gap: 20px;
   padding-bottom: 20px; /* Espacio inferior para evitar que los botones se superpongan */
 }
@@ -736,12 +736,11 @@ body{
   }
   
   .teamSubtitle_Container{
-    height: 10vh;
+    height: 25vh;
     display: flex;
-    
   }
   .teamSubtitle_Container h2{
-    font-size: 3rem;
+    font-size: 6rem;
     -webkit-text-stroke: 0.1px #FFF5D9;
   }
   
@@ -761,7 +760,7 @@ body{
   .innerCarrousel {
     display: flex;
     justify-content: center;
-    padding-left: 310px;
+    padding-left: 320px;
     gap: 20px;
     padding-bottom: 20px; /* Espacio inferior para evitar que los botones se superpongan */
     
@@ -799,8 +798,8 @@ body{
     z-index: 3;
     background-color: transparent;
     border: 0px;
-    margin-right: 23%;
-    margin-top: 15%;
+    margin-right: 25%;
+    margin-top: 25%;
   }
   .bottomLeft{
     position: absolute;
@@ -810,8 +809,8 @@ body{
     background-color: transparent;
     border: 0px;
     transform: scaleX(-1);
-    margin-left: 23%;
-    margin-top: 15%;
+    margin-left: 25%;
+    margin-top: 25%;
     
   }
   .arrow{
@@ -937,6 +936,15 @@ body{
   }
 }
 @media screen and (max-width: 460px) {
+
+  .teamSubtitle_Container{
+    height: 25vh;
+    display: flex;
+  }
+  .teamSubtitle_Container h2{
+    font-size: 5rem;
+    -webkit-text-stroke: 0.1px #FFF5D9;
+  }
   .arrow{
     width: 20px;
     height: auto;
@@ -955,8 +963,9 @@ body{
     z-index: 3;
     background-color: transparent;
     border: 0px;
-    margin-right: 13%;
-    margin-top: 20%;
+    margin-right: 5%;
+    margin-top: 40%;
+    z-index: 999;
   }
   .bottomLeft{
     position: absolute;
@@ -966,9 +975,9 @@ body{
     background-color: transparent;
     border: 0px;
     transform: scaleX(-1);
-    margin-left: 12%;
-    margin-top: 20%;
-    
+    margin-left: 5%;
+    margin-top: 40%;
+    z-index: 999;
   }
   .sponsorContainer{
     margin-top: 40px;
@@ -977,7 +986,7 @@ body{
     
   }
   .sponsorCard div{
-    width: 40px;
+    width: 50px;
     height: 40px; 
   }
 
