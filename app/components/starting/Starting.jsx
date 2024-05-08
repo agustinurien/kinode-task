@@ -1,7 +1,6 @@
 "use client"
 import Image from "next/image"
 import kinode from "../../../public/assets/kinode.png"
-import logo from "../../../public/assets/Vector.png"
 import { open_Sans } from "@/app/fonts"
 import { motion, useAnimation, useInView } from "framer-motion"
 import { useEffect, useRef } from "react"
@@ -33,8 +32,8 @@ const Starting = () => {
                     className="kinodeTextContainer">
                     <Image
                         src={kinode}
-                        height={"auto"}
-                        width={"auto"}
+                        height={400}
+                        width={400}
                         alt="title"
                         priority={true}
                         className="kinodeTextLogo"
