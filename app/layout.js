@@ -7,7 +7,7 @@ import Footer from "./components/layout/Footer";
 export const metadata = {
   title: "Kinode | Agustin Urien",
   description: "The technical home website challenge for Kinode.",
-  canonicalUrl: '',
+  canonicalUrl: 'https://kinode-task.vercel.app/',
   icons: {
     icon: ['/favicon.ico?v=4'],
     apple: ['/apple-touch-icon.png?v=4'],
