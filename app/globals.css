@@ -934,6 +934,21 @@ body{
     margin-top: 20%;
     
   }
+  .socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 5%;
+    
+    
+  }
+  .socials a{
+    padding-right: 25px;
+    padding-top: 10px;
+    font-size: 19px;
+    
+  }
 }
 @media screen and (max-width: 460px) {
 
@@ -1003,10 +1018,7 @@ body{
     font-size: 0.8rem;
     
   }
-  .socials a{
-    font-size: 15px;
-    
-  }
+  
   .footerContent{
     height: 200px;
   }
